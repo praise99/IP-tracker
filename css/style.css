@@ -87,3 +87,76 @@ html {
 .info-loc {
   border-left: 2px solid hsl(0, 0%, 59%);
 }
+@media (max-width: 480.98px) {
+  html {
+    font-size: 7.5px;
+  }
+  .middle {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    top: 50%;
+  }
+  .info-loc {
+    border-left: none;
+    padding-bottom: 2rem;
+  }
+  .info-title {
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 0rem;
+    padding-bottom: 0rem;
+  }
+  .info-desc {
+    font-size: 3rem;
+    padding-left: 0rem;
+    width: auto;
+    text-align: center;
+  }
+  .top-input {
+    padding: 1.3rem;
+    width: 38rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767.98px) {
+  html {
+    font-size: 7.5px;
+  }
+  .middle {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    top: 48%;
+  }
+  .info-loc {
+    border-left: none;
+    padding-bottom: 2rem;
+  }
+  .info-title {
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 0rem;
+    padding-bottom: 0rem;
+  }
+  .info-desc {
+    font-size: 3rem;
+    padding-left: 0rem;
+    width: auto;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  html {
+    font-size: 9px;
+  }
+  .middle {
+    width: 87%;
+  }
+  .info-desc {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+}

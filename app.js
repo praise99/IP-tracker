@@ -29,7 +29,7 @@ const map = L.map('mapid', {
     ]
 })
 
-updateMarker = (update_marker = [42, 42]) => {
+updateMarker = (update_marker = [7.4432, 3.9003]) => {
     map.setView(update_marker, 13);
     L.marker(update_marker).addTo(map);
 }
