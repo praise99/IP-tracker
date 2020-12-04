@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+.container {
+  font-family: "Rubik", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+.section {
+}
+.top {
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../images/pattern-bg.png);
+  position: relative;
+  margin-top: -3rem;
+}
+.top-content {
+  display: flex;
+}
+.middle {
+  display: flex;
+  padding: 3rem;
+  position: absolute;
+  color: black;
+  background-color: white;
+  justify-content: space-around;
+  width: 80%;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+  border-radius: 1.5rem;
+}
+
+.bottom {
+  background-color: black;
+  height: 70vh;
+}
+.top-title {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+.top-input {
+  padding: 1.3rem;
+  width: 50rem;
+  border-radius: 12px 0px 0px 12px;
+  border: 2px solid white;
+  outline: white;
+}
+.cool {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 17%);
+  width: 5rem;
+  border: 2px solid hsl(0, 0%, 17%);
+  border-radius: 0px 12px 12px 0px;
+  cursor: pointer;
+  outline: hsl(0, 0%, 17%);
+}
+.info-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+  padding-left: 2rem;
+}
+.info-desc {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-left: 2rem;
+  width: 15rem;
+}
+.info-loc {
+  border-left: 2px solid hsl(0, 0%, 59%);
+}

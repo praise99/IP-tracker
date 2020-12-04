@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>IP-ADDRESS TRACKER</title>
+        <meta name="description" content="ip-address tracker">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+    </head>
+    <body>
+        <main class="container">
+            <div class="section">
+                <div class="top">
+                    <h2 class="top-title">IP Address Tracker</h2>
+                    <div class="top-content">
+                        <div class="sup">
+                            <input type="text" placeholder="Search for any IP address or domain" class="top-input">
+                        </div>
+                        <div class="cool">
+                            <img src="images/icon-arrow.svg" alt="arrow" class="cool-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="info-loc">
+                        <h3 class="info-title">IP Address</h3>
+                        <p class="info-desc ip">191.212.174.101</p>
+                    </div>
+                    <div class="info-loc">
+                        <h3 class="info-title">Location</h3>
+                        <p class="info-desc town">Brooklyn. NY 10001</p>
+                    </div>
+                    <div class="info-loc">
+                        <h3 class="info-title">Timezone</h3>
+                        <p class="info-desc zone">UTC -05:00</p>
+                    </div>
+                    <div class="info-loc">
+                        <h3 class="info-title">ISP</h3>
+                        <p class="info-desc isp">SpaceX starlink</p>
+                    </div>
+                </div>
+                <div class="bottom" id="mapid"></div>
+            </div>
+        </main>
+         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+        <script src="app.js" async defer></script>
+    </body>
+</html>
