@@ -14,36 +14,33 @@ html {
 .section {
 }
 .top {
-  height: 35vh;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-image: url(../images/pattern-bg.png);
   position: relative;
-  margin-top: -3rem;
 }
 .top-content {
   display: flex;
 }
 .middle {
   display: flex;
-  padding: 3rem;
-  position: absolute;
+  padding: 2rem;
   color: black;
   background-color: white;
   justify-content: space-around;
   width: 80%;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2000;
   border-radius: 1.5rem;
+  position: absolute;
+  z-index: 20000;
+  margin-top: 30rem;
 }
 
 .bottom {
   background-color: black;
-  height: 70vh;
+  height: 600px;
 }
 .top-title {
   color: white;
@@ -96,7 +93,10 @@ html {
     justify-content: center;
     align-items: center;
     width: 75%;
-    top: 50%;
+    margin-top: 53rem;
+  }
+  .bottom {
+    height: 600px;
   }
   .info-loc {
     border-left: none;
@@ -128,7 +128,7 @@ html {
     justify-content: center;
     align-items: center;
     width: 70%;
-    top: 48%;
+    margin-top: 50rem;
   }
   .info-loc {
     border-left: none;
@@ -146,6 +146,9 @@ html {
     width: auto;
     text-align: center;
   }
+  .bottom {
+    height: 900px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023.98px) {
   html {
@@ -156,6 +159,9 @@ html {
   }
   .info-desc {
     font-size: 1.8rem;
+  }
+  .bottom {
+    height: 1300px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1199.98px) {
