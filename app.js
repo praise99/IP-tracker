@@ -41,6 +41,7 @@ getIPDetails = (default_ip) => {
     else {
         var ip_url = `${bypass_cors_url}${api_uri}${current_verion}?apiKey=${personal_api}&ipAddress=${default_ip}`
     }
+    renderLoader(bottom);
     fetch(ip_url, headers_option)
     .then( results => results.json())
     .then( data => {
@@ -50,7 +51,9 @@ getIPDetails = (default_ip) => {
         current_isp.innerHTML = data.isp
 
         // update map marker 
+        
         updateMarker([data.location.lat, data.location.lng])
+        clearLoader()
     })
     .catch(error => {
         alert("Unable to get IP details")
@@ -58,12 +61,29 @@ getIPDetails = (default_ip) => {
     })
 
 }
+const renderLoader = parent => {
+    const loader = `
+        <div class="loader">
+            <svg>
+                <use href="images/icons.svg#icon-cw"></use>
+            </svg>
+        </div>
+    `;
+    parent.insertAdjacentHTML('afterbegin', loader);
+};
+const clearLoader = () => {
+    const loader = document.querySelector(".loader");
+    if (loader) loader.parentElement.removeChild(loader);
+};
+const bottom=document.querySelector(".bottom")
+
 document.addEventListener('load', updateMarker())
 
 search_btn.addEventListener('click', e => {
     e.preventDefault()
     if (entered_ip.value != '' && entered_ip.value != null) {
         getIPDetails(entered_ip.value)
+        entered_ip.value='';
         return
     }
     alert("Please enter a valid IP address");
