@@ -186,6 +186,11 @@ html {
   transform-origin: 44% 50%;
   animation: rotate 1.5s infinite linear;
 }
+.middle {
+  position: absolute;
+  top: 80%;
+  margin-top: 0rem;
+}
 
 @keyframes rotate {
   0% {

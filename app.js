@@ -51,13 +51,14 @@ getIPDetails = (default_ip) => {
         current_isp.innerHTML = data.isp
 
         // update map marker 
-        
-        updateMarker([data.location.lat, data.location.lng])
         clearLoader()
+        updateMarker([data.location.lat, data.location.lng])
+        
     })
     .catch(error => {
         alert("Unable to get IP details")
         console.log(error)
+        clearLoader()
     })
 
 }
@@ -87,4 +88,5 @@ search_btn.addEventListener('click', e => {
         return
     }
     alert("Please enter a valid IP address");
+    clearLoader();
 })
